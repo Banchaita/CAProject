@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* commone css */
+
+a:hover{
+  text-decoration: none !important;
+}
+
+.main_left {
+  background-position: center;
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(47, 46, 47, 0.73)),
+    url(./assets/images/login-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+.main_left #app{
+  z-index: 100;
+}
+
+#app{
+  color: #3a3535;
+}
+#app .title {
+  padding-left: 1em;
+  grid-column: 1/-1;
+  grid-row: 1;
+  font-size: 5rem;
+  width: 100%;
+  z-index: 2;
+}
+.title > .title-inner {
+  display: inline-block;
+}
+@-webkit-keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes text-clip {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@-webkit-keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+@-webkit-keyframes inner-left {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes inner-left {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: none;
+  }
+}
+.cafe,
+.mozart {
+  -webkit-animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.title-inner {
+  display: inline-block;
+  -webkit-animation: inner-left 1s 1s ease both;
+          animation: inner-left 1s 1s ease both;
+}
+
+.cafe-inner {
+  display: inline-block;
+  -webkit-animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.mozart-inner {
+  -webkit-animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.title {
+  -webkit-animation: outer-left 1s 1s ease both;
+          animation: outer-left 1s 1s ease both;
+}
+
+.cafe > .cafe-inner {
+  display: inline-block;
+}
+
+.mozart {
+  display: inline-block;
+}
+
+
+.signup_right {
+  float: right;
+  width: 50%;
+  height: 100vh;
+  padding: 5%;
+}
+
+.signup_right .login-area, .signup-area, .forgetpassowrd-area{
+  padding: 10%;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.signup_right .login-area .from-title{
+  text-align: center;
+  font-size: 52px;
+  color: #000;
+  letter-spacing: 8px;
+  font-weight: 800;
+  text-transform: uppercase; 
+}
+.signup_right .signup-area .from-title{
+  text-align: center;
+  font-size: 52px;
+  color: #000;
+  letter-spacing: 8px;
+  font-weight: 800;
+  text-transform: uppercase; 
+}
+.signup_right .forgetpassowrd-area .from-title{
+  text-align: center;
+  font-size: 35px;
+  color: #000;
+  letter-spacing: 8px;
+  font-weight: 800;
+  text-transform: uppercase; 
+}
+
+button.login-btn {
+  width: 100%;
+  height: 7vh;
+  font-size: 22px;
+  color: #000;
+  letter-spacing: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text-forgotpassword{
+  font-size: 15px;
+}
+
+.login-footer-text, .signup-footer-text{
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.login-footer-text, .signup-footer-text span{
+  font-weight: 800;
+}
+
+.otp-part input {
+  width: 4rem !important;
+  text-align: center;
+  height: 4rem !important;
+  font-size: 20px !important;
+  margin-top: 47px;
+  margin-left: 12px;
+}
