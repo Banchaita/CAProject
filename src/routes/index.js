@@ -12,7 +12,9 @@ import {
     ChangeCompanyName, 
     CollateralFreeLoan, 
     Contact, 
+    CopyrightRegistration, 
     CreditScoreCheck, 
+    Demo, 
     ESIReturn, 
     Home, 
     IncreaseAuthorizedCapital, 
@@ -31,10 +33,14 @@ import {
     TermLoan,
     TrademarkObjection,
     TrademarkRegistration,
+    TrademarkRenewal,
     WindingUpofCompany,
     WindingUpofLLP,
     WorkingCapital
 } from "../Viwes";
+
+
+
 
 
 
@@ -90,6 +96,10 @@ const AppRouter =() =>{
             <Route path="/service/compliance/registered_office_change" exact element={<RegisteredOfficeChange/>}/>
             <Route path="/trademarkcopyright/trademark_registration" exact element={<TrademarkRegistration/>}/>
             <Route path="/trademarkcopyright/trademark_objection" exact element={<TrademarkObjection/>}/>
+            <Route path="/trademarkcopyright/trademark_renewal" exact element={<TrademarkRenewal/>}/>
+            <Route path="/trademarkcopyright/copyright_registration" exact element={<CopyrightRegistration/>}/>
+            <Route path="/demo" exact element={<Demo/>}/>
+           
            
         </Routes>
     )

@@ -37,10 +37,10 @@ const Footer = () => {
                         <a href="#">Trademark Assignment</a>
                       </li>
                       <li>
-                        <a href="#">Trademark Renewal</a>
+                        <a href="/trademarkcopyright/trademark_renewal">Trademark Renewal</a>
                       </li>
                       <li>
-                        <a href="#">Copyright Registration</a>
+                        <a href="/trademarkcopyright/copyright_registration">Copyright Registration</a>
                       </li>
                     </ul>
                   </div>

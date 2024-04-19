@@ -31,6 +31,10 @@ import RemoveDirectors from "./Service/Compliance/RemoveDirectors";
 import RegisteredOfficeChange from "./Service/Compliance/RegisteredOfficeChange";
 import TrademarkRegistration from "./TrademarkCopyright/TrademarkRegistration";
 import TrademarkObjection from "./TrademarkCopyright/TrademarkObjection";
+import TrademarkRenewal from "./TrademarkCopyright/TrademarkRenewal";
+import CopyrightRegistration from "./TrademarkCopyright/CopyrightRegistration";
+import Demo from "./demo";
+
 
 
 
@@ -47,6 +51,7 @@ export{
     CMAReportPreparation,
     CollateralFreeLoan,
     Contact,
+    CopyrightRegistration,
     CreditScoreCheck,
     ESIReturn,
     IncreaseAuthorizedCapital,
@@ -65,10 +70,12 @@ export{
     TDSReturn,
     TrademarkRegistration,
     TrademarkObjection,
+    TrademarkRenewal,
     TermLoan,
     WindingUpofLLP,
     WorkingCapital,
     WindingUpofCompany,
+    Demo
 }
 
 
